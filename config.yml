@@ -1,0 +1,16 @@
+authorName: default
+experimentName: example_concate
+trialConcurrency: 1
+maxExecDuration: 8h
+maxTrialNum: 100
+trainingServicePlatform: local
+localConfig:
+  useActiveGpu: true
+searchSpacePath: search_space.json
+useAnnotation: false
+tuner:
+  builtinTunerName: TPE
+trial:
+  command: python main.py --cfg configs/nuclei_normalsize.yaml
+  codeDir: .
+  gpuNum: 5

@@ -1,0 +1,9 @@
+MODEL:
+  TYPE: nuclei
+  NAME: nuclei_test
+  DROP_PATH_RATE: 0.2
+  SWIN:
+    EMBED_DIM: 12
+    DEPTHS: [ 6, 6, 4, 4, 6, 2 ]
+    NUM_HEADS: [ 6, 12, 12, 12, 24, 48]
+    WINDOW_SIZE: 7
